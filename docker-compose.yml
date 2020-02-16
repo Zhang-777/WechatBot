@@ -1,0 +1,10 @@
+version: '3'
+services:
+  wechatbot:
+    build: .
+    container_name: wechatbot
+    ports:
+        - "8080:5000"
+    command: >
+            bash -c "gunicorn --bind 0.0.0.0:5000 wsgi:application --timeout=300"
+
