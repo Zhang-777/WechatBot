@@ -1,7 +1,0 @@
-language: python
-python:
-    - "2.7"
-services:
-    - redis-server
-before_script: sudo redis-server /etc/redis/redis.conf --port 6379 --requirepass secret
-script: make test
