@@ -2,3 +2,4 @@ flask
 loguru
 gunicorn
 xmltodict
+Pillow>=6.2.2
